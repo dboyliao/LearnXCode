@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C72679501C64473000E48F10 /* SimpleCSVFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C726794F1C64473000E48F10 /* SimpleCSVFile.swift */; };
+		C72679521C646AD400E48F10 /* run_mogenerator.sh in Resources */ = {isa = PBXBuildFile; fileRef = C72679511C646AD400E48F10 /* run_mogenerator.sh */; };
+		C726795A1C64B76800E48F10 /* sample-data.csv in Resources */ = {isa = PBXBuildFile; fileRef = C72679591C64B76800E48F10 /* sample-data.csv */; };
 		C7A6CB731C621AA300D1E8F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A6CB721C621AA300D1E8F1 /* AppDelegate.swift */; };
 		C7A6CB761C621AA300D1E8F1 /* Passer_Rating.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7A6CB741C621AA300D1E8F1 /* Passer_Rating.xcdatamodeld */; };
 		C7A6CB781C621AA300D1E8F1 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A6CB771C621AA300D1E8F1 /* MasterViewController.swift */; };
@@ -14,9 +17,20 @@
 		C7A6CB7D1C621AA300D1E8F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7A6CB7B1C621AA300D1E8F1 /* Main.storyboard */; };
 		C7A6CB7F1C621AA300D1E8F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7A6CB7E1C621AA300D1E8F1 /* Assets.xcassets */; };
 		C7A6CB821C621AA300D1E8F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7A6CB801C621AA300D1E8F1 /* LaunchScreen.storyboard */; };
+		C7FB95A71C63677D00BBDFC9 /* _Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FB95A31C63677D00BBDFC9 /* _Game.swift */; };
+		C7FB95A81C63677D00BBDFC9 /* _Passer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FB95A41C63677D00BBDFC9 /* _Passer.swift */; };
+		C7FB95A91C63677D00BBDFC9 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FB95A51C63677D00BBDFC9 /* Game.swift */; };
+		C7FB95AA1C63677D00BBDFC9 /* Passer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FB95A61C63677D00BBDFC9 /* Passer.swift */; };
+		C7FB95AE1C63690000BBDFC9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FB95AD1C63690000BBDFC9 /* Extensions.swift */; };
+		C7FB95B21C63698400BBDFC9 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FB95B11C63698400BBDFC9 /* Utilities.swift */; };
+		C7FB95B51C63709900BBDFC9 /* rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FB95B41C63709900BBDFC9 /* rating.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C726794F1C64473000E48F10 /* SimpleCSVFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCSVFile.swift; sourceTree = "<group>"; };
+		C72679511C646AD400E48F10 /* run_mogenerator.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = run_mogenerator.sh; sourceTree = "<group>"; };
+		C72679541C64B3DA00E48F10 /* generate-games.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = "generate-games.rb"; sourceTree = "<group>"; };
+		C72679591C64B76800E48F10 /* sample-data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "sample-data.csv"; path = "Passer Rating/sample-data.csv"; sourceTree = "<group>"; };
 		C7A6CB6F1C621AA300D1E8F1 /* Passer Rating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Passer Rating.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7A6CB721C621AA300D1E8F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7A6CB751C621AA300D1E8F1 /* Passer_Rating.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Passer_Rating.xcdatamodel; sourceTree = "<group>"; };
@@ -26,6 +40,13 @@
 		C7A6CB7E1C621AA300D1E8F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7A6CB811C621AA300D1E8F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7A6CB831C621AA300D1E8F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7FB95A31C63677D00BBDFC9 /* _Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Game.swift; sourceTree = "<group>"; };
+		C7FB95A41C63677D00BBDFC9 /* _Passer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Passer.swift; sourceTree = "<group>"; };
+		C7FB95A51C63677D00BBDFC9 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		C7FB95A61C63677D00BBDFC9 /* Passer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Passer.swift; sourceTree = "<group>"; };
+		C7FB95AD1C63690000BBDFC9 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C7FB95B11C63698400BBDFC9 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		C7FB95B41C63709900BBDFC9 /* rating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rating.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,10 +60,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C72679531C646AE000E48F10 /* ScriptsAndData */ = {
+			isa = PBXGroup;
+			children = (
+				C72679591C64B76800E48F10 /* sample-data.csv */,
+				C72679541C64B3DA00E48F10 /* generate-games.rb */,
+				C72679511C646AD400E48F10 /* run_mogenerator.sh */,
+			);
+			name = ScriptsAndData;
+			sourceTree = "<group>";
+		};
 		C7A6CB661C621AA300D1E8F1 = {
 			isa = PBXGroup;
 			children = (
 				C7A6CB711C621AA300D1E8F1 /* Passer Rating */,
+				C72679531C646AE000E48F10 /* ScriptsAndData */,
 				C7A6CB701C621AA300D1E8F1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,6 +90,8 @@
 		C7A6CB711C621AA300D1E8F1 /* Passer Rating */ = {
 			isa = PBXGroup;
 			children = (
+				C7FB95A21C63677D00BBDFC9 /* CoreData */,
+				C7FB95B31C63706F00BBDFC9 /* UtilsFiles */,
 				C7A6CB721C621AA300D1E8F1 /* AppDelegate.swift */,
 				C7A6CB771C621AA300D1E8F1 /* MasterViewController.swift */,
 				C7A6CB791C621AA300D1E8F1 /* DetailViewController.swift */,
@@ -70,6 +104,29 @@
 			path = "Passer Rating";
 			sourceTree = "<group>";
 		};
+		C7FB95A21C63677D00BBDFC9 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				C7FB95A31C63677D00BBDFC9 /* _Game.swift */,
+				C7FB95A41C63677D00BBDFC9 /* _Passer.swift */,
+				C7FB95A51C63677D00BBDFC9 /* Game.swift */,
+				C7FB95A61C63677D00BBDFC9 /* Passer.swift */,
+			);
+			name = CoreData;
+			path = mogenerated;
+			sourceTree = "<group>";
+		};
+		C7FB95B31C63706F00BBDFC9 /* UtilsFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C7FB95AD1C63690000BBDFC9 /* Extensions.swift */,
+				C7FB95B11C63698400BBDFC9 /* Utilities.swift */,
+				C7FB95B41C63709900BBDFC9 /* rating.swift */,
+				C726794F1C64473000E48F10 /* SimpleCSVFile.swift */,
+			);
+			name = UtilsFiles;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,6 +137,7 @@
 				C7A6CB6B1C621AA300D1E8F1 /* Sources */,
 				C7A6CB6C1C621AA300D1E8F1 /* Frameworks */,
 				C7A6CB6D1C621AA300D1E8F1 /* Resources */,
+				C72679581C64B4CF00E48F10 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -130,11 +188,29 @@
 			files = (
 				C7A6CB821C621AA300D1E8F1 /* LaunchScreen.storyboard in Resources */,
 				C7A6CB7F1C621AA300D1E8F1 /* Assets.xcassets in Resources */,
+				C72679521C646AD400E48F10 /* run_mogenerator.sh in Resources */,
 				C7A6CB7D1C621AA300D1E8F1 /* Main.storyboard in Resources */,
+				C726795A1C64B76800E48F10 /* sample-data.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C72679581C64B4CF00E48F10 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SOURCE_ROOT}\"/generate-games.rb > \"${SOURCE_ROOT}/Passer Rating\"/sample-data.csv";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C7A6CB6B1C621AA300D1E8F1 /* Sources */ = {
@@ -143,7 +219,15 @@
 			files = (
 				C7A6CB761C621AA300D1E8F1 /* Passer_Rating.xcdatamodeld in Sources */,
 				C7A6CB731C621AA300D1E8F1 /* AppDelegate.swift in Sources */,
+				C7FB95A91C63677D00BBDFC9 /* Game.swift in Sources */,
 				C7A6CB781C621AA300D1E8F1 /* MasterViewController.swift in Sources */,
+				C72679501C64473000E48F10 /* SimpleCSVFile.swift in Sources */,
+				C7FB95B51C63709900BBDFC9 /* rating.swift in Sources */,
+				C7FB95A81C63677D00BBDFC9 /* _Passer.swift in Sources */,
+				C7FB95AE1C63690000BBDFC9 /* Extensions.swift in Sources */,
+				C7FB95AA1C63677D00BBDFC9 /* Passer.swift in Sources */,
+				C7FB95A71C63677D00BBDFC9 /* _Game.swift in Sources */,
+				C7FB95B21C63698400BBDFC9 /* Utilities.swift in Sources */,
 				C7A6CB7A1C621AA300D1E8F1 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +378,7 @@
 				C7A6CB881C621AA300D1E8F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

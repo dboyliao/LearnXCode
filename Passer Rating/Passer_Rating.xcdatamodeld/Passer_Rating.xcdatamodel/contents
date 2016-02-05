@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Automatic">
-    <entity name="Game" syncable="YES">
-        <attribute name="attempts" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
-        <attribute name="completions" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
-        <attribute name="interceptions" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
-        <attribute name="ourScore" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    <entity name="Game" representedClassName="Game" syncable="YES">
+        <attribute name="attempts" attributeType="Integer 32" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="completions" attributeType="Integer 32" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="interceptions" attributeType="Integer 32" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="ourScore" attributeType="Integer 32" minValueString="0" defaultValueString="0" syncable="YES"/>
         <attribute name="ourTeam" attributeType="String" minValueString="10" syncable="YES"/>
-        <attribute name="theirScore" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="theirScore" attributeType="Integer 32" minValueString="0" defaultValueString="0" syncable="YES"/>
         <attribute name="theirTeam" attributeType="String" minValueString="10" syncable="YES"/>
+        <attribute name="touchdowns" optional="YES" attributeType="Integer 32" minValueString="0" defaultValueString="0" syncable="YES"/>
         <attribute name="whenPlayed" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="yards" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="yards" attributeType="Integer 32" minValueString="0" defaultValueString="0" syncable="YES"/>
         <relationship name="passer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Passer" inverseName="games" inverseEntity="Passer" syncable="YES"/>
     </entity>
-    <entity name="Passer" syncable="YES">
+    <entity name="Passer" representedClassName="Passer" syncable="YES">
         <attribute name="currentTeam" optional="YES" attributeType="String" minValueString="4" syncable="YES"/>
         <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="games" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Game" inverseName="passer" inverseEntity="Game" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Game" positionX="-236" positionY="-153" width="128" height="193"/>
-        <element name="Passer" positionX="-20" positionY="-211" width="128" height="103"/>
+        <element name="Game" positionX="-236" positionY="-153" width="128" height="210"/>
+        <element name="Passer" positionX="-20" positionY="-211" width="128" height="105"/>
     </elements>
 </model>
